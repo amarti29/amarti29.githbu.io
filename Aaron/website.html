@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+          "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>My MLB Facts</title>
+
+<style type="text/css">
+
+body {
+  /* width: 800px; */
+  width: auto;
+  height: 600px;
+  top: 10px;
+  color: #000000;
+  background: #ffffff;
+  border: 2px solid black;
+  margin:  12px 30px 12px 30px;
+  padding: 12px 30px 12px 30px;
+  font: normal 24px Verdana;
+  line-height: 36px;
+  visibility: visible;
+  /* overflow: auto; */
+}
+
+</style>
+
+<script type="text/javascript">
+
+  var ans1 = "BOSTON RED SOX";
+
+  var ans2 = "Because Boston Red Sox always has respect for" +
+  "all Dominican players that have alredy played for the team";
+  
+  var ans3 = "1903, 1912, 1915, 1916, 1918, 2004, 2007, 2013";
+
+  var ans4 = "David Ortiz";
+
+  function showAnswer(which) {
+    var tmp = document.getElementById('answer');
+        tmp.style.visibility = 'visible';
+        tmp.innerHTML = which;
+  }
+
+</script>
+
+</head>
+<body>
+
+<p><b> My MLB Facts</b>
+</p>
+
+<div>
+<form action="javascript:void(0)">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<button style="width:200px; height:150px;"
+        name="button1"
+        onclick="showAnswer(ans1)"
+><img src="sox.jpg"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+My favorite Team 
+</button>
+</td><td>
+
+<button style="width:200px; height:150px;"
+        name="button2"
+        onclick="showAnswer(ans2)"
+><img src="dominican.jpg"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+Why is Boston Red Sox my Favorite Team?
+</button>
+</td><td>
+
+<button style="width:200px; height:150px;"
+        name="button3"
+        onclick="showAnswer(ans3)"
+><img src="boston.jpg"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+Boston Red Sox World Series Championship record 
+</button>
+</td><td>
+
+<button style="width:200px; height:150px;"
+        name="button4"
+        onclick="showAnswer(ans4)"
+><img src="david.jpg"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+Who is my Favorite player?
+</button>
+</td></tr>
+</table>
+</form>
+</div>
+
+<div id="answer" style="border:1px black solid;">
+</div>
+</body>
+</html>
