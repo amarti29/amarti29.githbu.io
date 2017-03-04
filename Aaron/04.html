@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+          "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Information Science Quiz</title>
+
+<style type="text/css">
+
+body {
+  /* width: 800px; */
+  width: auto;
+  height: 600px;
+  top: 10px;
+  color: #000000;
+  background: #ffffff;
+  border: 2px solid black;
+  margin:  12px 30px 12px 30px;
+  padding: 12px 30px 12px 30px;
+  font: normal 24px Verdana;
+  line-height: 36px;
+  visibility: visible;
+  /* overflow: auto; */
+}
+
+</style>
+
+<script type="text/javascript">
+
+  var ans1 = "the study of processes for storing and retrieving information, especially scientific or technical information";
+
+  var ans2 = "information technology consulting";
+  "design and development of digital media-based services for business and for the education, scientific, entertainment, or manufacturing industries" +
+  "web search engine and software product development for a broad range of application areas"+
+  "human-computer interaction research and design"; 
+  "database design";
+  "electronic publishing and digital library development";
+  
+  var ans3 = "an electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.";
+
+  var ans4 = "a location connected to the Internet that maintains one or more pages on the World Wide Web.";
+
+  function showAnswer(which) {
+    var tmp = document.getElementById('answer');
+        tmp.style.visibility = 'visible';
+        tmp.innerHTML = which;
+  }
+
+</script>
+
+</head>
+<body>
+
+<p><b>Information Science Quiz</b>
+</p>
+
+<div>
+<form action="javascript:void(0)">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<button style="width:200px; height:150px;"
+        name="button1"
+        onclick="showAnswer(ans1)"
+><img src="Information Science.png"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+what is information science
+</button>
+</td><td>
+
+<button style="width:200px; height:150px;"
+        name="button2"
+        onclick="showAnswer(ans2)"
+><img src="Job.jpg"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+what kind of job you can work for information science
+</button>
+</td><td>
+
+<button style="width:200px; height:150px;"
+        name="button3"
+        onclick="showAnswer(ans3)"
+><img src="Computer.jpg"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+what is a computer
+</button>
+</td><td>
+
+<button style="width:200px; height:150px;"
+        name="button4"
+        onclick="showAnswer(ans4)"
+><img src="Website.jpg"
+      width="50"
+      height="75"
+      border="0" />
+<br>
+what is a website
+</button>
+</td></tr>
+</table>
+</form>
+</div>
+
+<div id="answer" style="border:1px black solid;">
+</div>
+</body>
+</html>
